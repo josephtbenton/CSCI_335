@@ -9,6 +9,6 @@ import search.core.BestFirstHeuristic;
 public class ManhattanDistanceHeuristic implements BestFirstHeuristic<MazeExplorer> {
     @Override
     public int getDistance(MazeExplorer node, MazeExplorer goal) {
-        return node.getLocation().getManhattanDist(goal.getLocation() );
+        return node.getLocation().getManhattanDist(goal.getLocation());
     }
 }
