@@ -1,8 +1,6 @@
 package maze.core;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.TreeSet;
+import java.util.*;
 
 import search.core.BestFirstObject;
 
@@ -48,7 +46,9 @@ public class MazeExplorer implements BestFirstObject<MazeExplorer> {
 		}
 		return "@" + location.toString() + treasures.toString();
 	}
-	
+	public Set<MazeCell> getTreasure() {return Collections.unmodifiableSet(m.getTreasures());}
+	public SortedSet<MazeCell> getTreasureFound() {return Collections.unmodifiableSortedSet(treasureFound);}
+
 	@Override
 	public int hashCode() {return toString().hashCode();}
 	
