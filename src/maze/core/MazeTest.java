@@ -2,13 +2,20 @@ package maze.core;
 
 import static org.junit.Assert.*;
 
+import maze.gui.AIReflector;
 import org.junit.Test;
 
+import search.core.BestFirstHeuristic;
 import search.core.BestFirstSearcher;
+
+import java.io.*;
+import java.util.ArrayList;
 
 public class MazeTest {
 	final static int NUM_TESTS = 100;
 	final static int WIDTH = 10, HEIGHT = 15;
+	final static String homeDir = System.getProperty("user.home") + File.separator + "Desktop",
+			customFunctionPerformanceFile = "UserPerformanceResults.csv" ;
 
 	@Test
 	public void testNoTreasure() {
@@ -57,5 +64,39 @@ public class MazeTest {
 			totalBreadth += breadthFirst.getNumNodes();
 		}
 		assertTrue(totalBest < totalBreadth);
+	}
+
+	@Test
+	public void testUserDefined() throws ClassNotFoundException, IllegalAccessException, InstantiationException, IOException {
+		PrintWriter writer = new PrintWriter(homeDir + File.separator + customFunctionPerformanceFile, "UTF-8");
+		String prefix = "maze.heuristics";
+		AIReflector reflector = new AIReflector(BestFirstHeuristic.class, prefix);
+		ArrayList<String> names = reflector.getTypeNames();
+
+		for (String name : names){
+			writeToFile("nodes, depth, b*, solution length, " + name, writer);
+			String qualifiedName = prefix + "." + name;
+			BestFirstHeuristic<MazeExplorer> instance = (BestFirstHeuristic<MazeExplorer>) Class.forName(qualifiedName).newInstance();
+			defVBredth(instance, writer);
+		}
+		writer.close();
+	}
+
+	//just makes sure my code isn't worse than breadth first search.
+	public void defVBredth(BestFirstHeuristic hr, PrintWriter writer) throws IOException {
+		for (int i = 0; i < NUM_TESTS; ++i) {
+			Maze m = new Maze(WIDTH, HEIGHT);
+			m.makeMaze(new MazeCell(0, 0), new MazeCell(WIDTH - 1, HEIGHT - 1), 0, 1);
+			BestFirstSearcher<MazeExplorer> bestFirst = new BestFirstSearcher<>(hr);
+			MazeExplorer startNode = new MazeExplorer(m, m.getStart());
+			MazeExplorer endNode = new MazeExplorer(m, m.getEnd());
+			bestFirst.solve(startNode, endNode);
+			assertTrue(bestFirst.success());
+			writeToFile(bestFirst.getNumNodes() + ", " + bestFirst.getMaxDepth() + ", " + bestFirst.getBranchingFactor(Double.MAX_VALUE) + ", " + bestFirst.numSteps(), writer);
+		}
+	}
+
+	public void writeToFile(String line, PrintWriter fos) throws IOException {
+		fos.println(line);
 	}
 }
