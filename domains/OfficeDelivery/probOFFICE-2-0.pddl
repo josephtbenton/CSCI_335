@@ -1,0 +1,5 @@
+(define (problem OFFICE-2-0)
+(:domain OFFICE)
+(:objects A B R S H)
+(:init (roomhasbot H) (adjacent R H) (adjacent H R) (adjacent H S) (adjacent S H) (inroom A R) (inroom B S))
+(:goal (inroom B R) (adjacent R H) (adjacent H R) (adjacent H S) (adjacent S H) (inroom A S) (roomhasbot H)))
