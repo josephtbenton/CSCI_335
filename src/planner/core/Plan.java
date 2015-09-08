@@ -37,6 +37,7 @@ public class Plan implements Iterable<Action> {
 	//       per line
 	public String toString() {
 		StringBuffer result = new StringBuffer();
+		result.append("plan:");
 		for (int i = 0; i < planSteps.size(); ++i) {
 			Action step = planSteps.get(i);
 			result.append (step.nameAndParams());
