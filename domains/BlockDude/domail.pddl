@@ -1,14 +1,16 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; office world
+;;; BlockDude World
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (define (domain OFFICE)
   (:requirements :strips)
-  (:predicates (inroom ?x ?r)
-        (roomhasbot ?r)
-        (adjacent ?x ?y)
+  (:predicates (above ?x ?y)
+        (below ?x ?y)
+        (leftof ?x ?y)
+        (rightof ?x ?y)
+        (ismovable ?x)
+        (ischaracter ?x)
         (handempty)
-        (holding ?x)
         )
 
 
@@ -21,7 +23,7 @@
 		   (holding ?x)))
 
  (:action put-down
-	     :parameters (?r ?x)
+	     :parameters (?x ?r)
 	     :precondition (and (holding ?x) (roomhasbot ?r))
 	     :effect
 	     (and (not (holding ?x))
