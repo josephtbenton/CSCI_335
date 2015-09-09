@@ -21,7 +21,7 @@
 		   (holding ?x)))
 
  (:action put-down
-	     :parameters (?x ?r)
+	     :parameters (?r ?x)
 	     :precondition (and (holding ?x) (roomhasbot ?r))
 	     :effect
 	     (and (not (holding ?x))
