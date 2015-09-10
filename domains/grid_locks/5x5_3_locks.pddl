@@ -1,0 +1,10 @@
+(define (problem 5x5_3_locks)
+(:domain grid_locks)
+(:objects p1 p2 p3 p4 p5 b k1 k2 k3 l1 l2 l3)
+(:init
+(position p1) (position p2) (position p3) (position p4) (position p5) (bot b) (key k1) (key k2) (key k3) (lock l1) (lock l2) (lock l3)
+(unlocks k1 l1) (unlocks k2 l2) (unlocks k3 l3) (at b p1 p1) (at k1 p1 p3) (at l1 p3 p3) (at k2 p2 p1) (at l2 p3 p5) (at k3 p1 p5) (at l3 p5 p5)
+(inc p1 p2) (inc p2 p3) (inc p3 p4) (inc p4 p5) (dec p5 p4) (dec p4 p3) (dec p3 p2) (dec p2 p1)
+(handempty)
+)
+(:goal (and (unlocked l1) (unlocked l2) (unlocked l3))))

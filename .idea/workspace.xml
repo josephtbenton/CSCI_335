@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6e14774-8ed8-4e05-ad3b-4de77928d1e2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/domains/blockdude/domain.pddl" afterPath="$PROJECT_DIR$/domains/blockdude/domain.pddl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/domains/grid_locks/10x10 _7_locks.pddl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/domains/grid_locks/3x3_1_lock.pddl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/domains/grid_locks/5x5_3_locks.pddl" />
+      <change type="MOVED" beforePath="C:\Users\Joseph\IdeaProjects\CSCI_335\domains\blockdude\domain.pddl" afterPath="$PROJECT_DIR$/domains/grid_locks/domain.pddl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CSCI_335.iws" />
@@ -19,17 +22,57 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="3x3_1_lock.pddl" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/domains/grid_locks/3x3_1_lock.pddl">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.25801012">
+                    <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="CSCI_335" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="domain.pddl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/domains/blockdude/domain.pddl">
+      <file leaf-file-name="domain.pddl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/domains/grid_locks/domain.pddl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.8347386">
-              <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="10x10 _7_locks.pddl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/domains/grid_locks/10x10 _7_locks.pddl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.39184397">
+              <caret line="13" column="95" selection-start-line="13" selection-start-column="95" selection-end-line="13" selection-end-column="95" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="5x5_3_locks.pddl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/domains/grid_locks/5x5_3_locks.pddl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -60,6 +103,11 @@
         <option value="$PROJECT_DIR$/domains/OfficeDelivery/probOFFICE-2-0.pddl" />
         <option value="$PROJECT_DIR$/src/planner/heuristics/NoDeletePlan.java" />
         <option value="$PROJECT_DIR$/domains/blockdude/domain.pddl" />
+        <option value="$PROJECT_DIR$/domains/grid_locks/3x3_1_lock.pddl" />
+        <option value="$PROJECT_DIR$/domains/grid_locks/5x5_3_locks.pddl" />
+        <option value="$PROJECT_DIR$/domains/grid_locks/domain.pddl" />
+        <option value="$PROJECT_DIR$/domains/grid_locks/10x10 _5_locks.pddl" />
+        <option value="$PROJECT_DIR$/domains/grid_locks/10x10 _7_locks.pddl" />
       </list>
     </option>
   </component>
@@ -86,7 +134,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -147,46 +195,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSCI_335" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSCI_335" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="planner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSCI_335" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSCI_335" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="domains" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -205,25 +213,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="blocks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSCI_335" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSCI_335" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domains" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blockdude" />
+              <option name="myItemId" value="grid_locks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -508,7 +498,13 @@
       <option name="project" value="LOCAL" />
       <updated>1441838547386</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="GridWorld complete">
+      <created>1441848188702</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1441848188702</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -555,7 +551,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit test&#10;" />
     <MESSAGE value="office domain complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="office domain complete" />
+    <MESSAGE value="GridWorld complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="GridWorld complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -566,27 +563,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/search/core/BestFirstHeuristic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/search/core/BestFirstSearcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="42" selection-start-line="110" selection-start-column="42" selection-end-line="110" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/maze/heuristics/Dist2andFromDiag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/maze/core/MazeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -797,13 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domains/blocks/probBLOCKS-2-0.pddl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/domains/blocks/probBLOCKS-4-0.pddl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -923,10 +892,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domains/blockdude/domain.pddl">
+    <entry file="file://$PROJECT_DIR$/domains/blocks/probBLOCKS-2-0.pddl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8347386">
-          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domains/grid_locks/3x3_1_lock.pddl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25801012">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domains/grid_locks/domain.pddl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domains/grid_locks/5x5_3_locks.pddl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domains/grid_locks/10x10 _7_locks.pddl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39184397">
+          <caret line="13" column="95" selection-start-line="13" selection-start-column="95" selection-end-line="13" selection-end-column="95" />
           <folding />
         </state>
       </provider>
