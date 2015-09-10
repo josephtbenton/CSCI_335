@@ -25,11 +25,11 @@ public class PlanGraph {
 	}
 	
 	public Plan extractNoDeletePlan(State current) {
-        TreeSet<Predicate> predicates = new TreeSet<Predicate>(start.unmetGoals(goals));
+        LinkedList<Predicate> predicates = new LinkedList<>(current.unmetGoals(goals));
         LinkedList<Action> actionPlan = new LinkedList<>();
         while( !predicates.isEmpty() ) {
             Predicate p = predicates.pollFirst();
-            if (!current.predIsTrue(p)) {
+            if (!current.predIsTrue(p) && firstAdders.containsKey(p)) {
                 Action a = firstAdders.get(p);
                 actionPlan.addFirst(a);
                 for (Predicate pred : a.getPreconditions()) {
@@ -43,9 +43,6 @@ public class PlanGraph {
                 noDel.appendAction(e);
             }
         }
-        System.out.println(predicates);
-        System.out.println(actionPlan);
-        System.out.println(noDel);
         return noDel;
 		
 		// TODO: Implement this method.

@@ -7,7 +7,7 @@ public class BestFirstSearcher<T extends BestFirstObject<T>> {
     private BestFirstHeuristic<T> h;
     private boolean solutionFound;
     
-    private final static boolean debug = true;
+    private final static boolean debug = false;
     
     public BestFirstSearcher(BestFirstHeuristic<T> bfh) {
         h = bfh; 

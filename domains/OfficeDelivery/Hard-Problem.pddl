@@ -1,0 +1,7 @@
+(define (problem Hard-Problem)
+(:domain OFFICE)
+(:objects r1 r2 r3 r4 r5 r6 r7 p1 p2 p3 p4 p5 p6)
+(:init (roomhasbot r1) (handempty) (adjacent R1 R2) (adjacent R2 R1) (adjacent r2 r5) (adjacent r5 r2) (adjacent r3 r1)
+(adjacent r1 r3) (adjacent r3 r6) (adjacent r6 r3) (adjacent r1 r4) (adjacent r4 r1) (adjacent r7 r4) (adjacent r4 r7)
+(inroom p1 r5) (inroom p2 r5) (inroom p3 r6) (inroom p4 r6) (inroom p5 r7) (inroom p6 r7)
+(:goal (and (inroom p1 r1) (inroom p2 r2) (inroom p3 r5) (inroom p4 r5) (inroom p5 r3) (inroom p6 r4)) )))
